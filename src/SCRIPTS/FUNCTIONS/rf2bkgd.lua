@@ -1,4 +1,4 @@
-chdir("/SCRIPTS/BF")
+chdir("/SCRIPTS/RF2")
 apiVersion = 0
 protocol = assert(loadScript("protocols.lua"))()
 assert(loadScript(protocol.mspTransport))()

@@ -1,5 +1,5 @@
-local toolName = "TNS|Betaflight CMS|TNE"
-chdir("/SCRIPTS/BF")
+local toolName = "TNS|Rotorflight 2 CMS|TNE"
+chdir("/SCRIPTS/RF2")
 
 apiVersion = 0
 

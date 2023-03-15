@@ -1,67 +1,33 @@
 local PageFiles = {}
 
-if apiVersion >= 1.36 then
-    PageFiles[#PageFiles + 1] = { title = "VTX Settings", script = "vtx.lua" }
-end
+-- Rotorflight pages.
+PageFiles[#PageFiles + 1] = { title = "Profile - PIDs", script = "pids.lua" }
+PageFiles[#PageFiles + 1] = { title = "Profile - Governor", script = "profile_governor.lua" }
+PageFiles[#PageFiles + 1] = { title = "Profile - Rescue", script = "profile_rescue.lua" }
+PageFiles[#PageFiles + 1] = { title = "Profile - Various", script = "profile.lua" }
+PageFiles[#PageFiles + 1] = { title = "Copy profiles", script = "copy_profiles.lua" }
+PageFiles[#PageFiles + 1] = { title = "Rates", script = "ratesrf.lua" }
+PageFiles[#PageFiles + 1] = { title = "Governor", script = "governor.lua" }
+PageFiles[#PageFiles + 1] = { title = "Filters", script = "filters.lua" }
+PageFiles[#PageFiles + 1] = { title = "Accelerometer trim", script = "accelerometer.lua" }
+PageFiles[#PageFiles + 1] = { title = "Failsafe", script = "failsafe.lua" }
 
-if apiVersion >= 1.16 then
-    PageFiles[#PageFiles + 1] = { title = "Profiles", script = "profiles.lua" }
-end
+-- Betaflight pages that might (one day) work with Rotorflight (untested).
+--PageFiles[#PageFiles + 1] = { title = "VTX Settings", script = "vtx.lua" }
+--PageFiles[#PageFiles + 1] = { title = "GPS Rescue", script = "rescue.lua" }
+--PageFiles[#PageFiles + 1] = { title = "GPS PIDs", script = "gpspids.lua" }
 
-if apiVersion >= 1.16 then
-    PageFiles[#PageFiles + 1] = { title = "PIDs 1", script = "pids1.lua" }
-end
-
-if apiVersion >= 1.21 then
-    PageFiles[#PageFiles + 1] = { title = "PIDs 2", script = "pids2.lua" }
-end
-
-if apiVersion >= 1.16 then
-    PageFiles[#PageFiles + 1] = { title = "Rates", script = "rates.lua" }
-end
-
-if apiVersion >= 1.16 then
-    PageFiles[#PageFiles + 1] = { title = "Advanced PIDs", script = "pid_advanced.lua" }
-end
-
-if apiVersion >= 1.44 then
-    PageFiles[#PageFiles + 1] = { title = "Simplified Tuning", script = "simplified_tuning.lua" }
-end
-
-if apiVersion >= 1.16 then
-    PageFiles[#PageFiles + 1] = { title = "Filters 1", script = "filters1.lua" }
-end
-
-if apiVersion >= 1.42 then
-    PageFiles[#PageFiles + 1] = { title = "Filters 2", script = "filters2.lua" }
-end
-
-if apiVersion >= 1.16 then
-    PageFiles[#PageFiles + 1] = { title = "System / Motor", script = "pwm.lua" }
-end
-
-if apiVersion >= 1.16 then
-    PageFiles[#PageFiles + 1] = { title = "Receiver", script = "rx.lua" }
-end
-
-if apiVersion >= 1.16 then
-    PageFiles[#PageFiles + 1] = { title = "Failsafe", script = "failsafe.lua" }
-end
-
-if apiVersion >= 1.41 then
-    PageFiles[#PageFiles + 1] = { title = "GPS Rescue", script = "rescue.lua" }
-end
-
-if apiVersion >= 1.41 then
-    PageFiles[#PageFiles + 1] = { title = "GPS PIDs", script = "gpspids.lua" }
-end
-
-if apiVersion >= 1.16 then
-    PageFiles[#PageFiles + 1] = { title = "Trim Accelerometer", script = "acc_trim.lua" }
-end
-
-if apiVersion >= 1.45 then
-    PageFiles[#PageFiles + 1] = { title = "OSD Elements", script = "pos_osd.lua" }
-end
+-- Original Betaflight pages that are incompatible, because the MSP messages are different or not implemented in RF.
+--PageFiles[#PageFiles + 1] = { title = "Profiles", script = "profiles.lua" }
+--PageFiles[#PageFiles + 1] = { title = "PIDs 1", script = "pids1.lua" }
+--PageFiles[#PageFiles + 1] = { title = "PIDs 2", script = "pids2.lua" }
+--PageFiles[#PageFiles + 1] = { title = "PIDs Advanced", script = "pids_advanced.lua" }
+--PageFiles[#PageFiles + 1] = { title = "Rates", script = "rates.lua" }
+--PageFiles[#PageFiles + 1] = { title = "Filters 1", script = "filters1.lua" }
+--PageFiles[#PageFiles + 1] = { title = "Filters 2", script = "filters2.lua" }
+--PageFiles[#PageFiles + 1] = { title = "Receiver", script = "rx.lua" }
+--PageFiles[#PageFiles + 1] = { title = "Motors", script = "pwm.lua" }
+--PageFiles[#PageFiles + 1] = { title = "Simplified Tuning", script = "simplified_tuning.lua" }
+--PageFiles[#PageFiles + 1] = { title = "Receiver", script = "rxrf.lua" }
 
 return PageFiles
